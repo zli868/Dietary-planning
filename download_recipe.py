@@ -6,7 +6,7 @@ import requests
 def download_random_recipe(num_recipes=1):
     url = 'https://api.spoonacular.com/recipes/random'
     params = {
-        'number': 10,
+        'number': num_recipes,
         'apiKey': '41f198eb1fda42e19a807b5858929e7c'
     }
 
@@ -16,7 +16,7 @@ def download_random_recipe(num_recipes=1):
     return data
 
 def main():
-    num_recipes = 10
+    num_recipes = 50
     data = download_random_recipe(num_recipes)
     date_time_str = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
     with open(f'data/recipe/random_recipe_{num_recipes}_{date_time_str}.json', 'w') as f:
