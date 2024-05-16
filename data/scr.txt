@@ -1,0 +1,39 @@
+{R1,...,Rd} is set of recipe
+{V1,...,Vm} is set of nutrition
+
+obj: maximize the food preference produced
+maxΣ αk*pk from k=1 to d
+subject to 
+1.time cost: the amount of the all food time cost must be less than a input time T
+Σ αk*tk <=T from k=1 to d
+2.nutritional requirements: sum of all nutritional value of all foods produced must be greater than a vector W
+Σ M * αk >=W, where M is a matrix that represent each recipe's nutritional value
+
+inputs: T(a constant) , W(a vector whose values can be derived from Nutrient_Intake_Recommendations_Formalized.csv)
+outputs: {αk,...,αk,,,αd} denotes the quantity of recipes to produce
+
+sample drawn from table is that
+Nutrient_Intake_Recommendations_Formalized.csv
+Nutrient	Quantity	Unit
+Calcium	1000	mg
+Carbohydrate	351	g
+Cholesterol	0	-
+Energy	3119	kcal
+
+Recipe_Cost_Formalized.csv
+Name	Time	Preference
+5 Minute Gluten Free Wonder Buns	45	4
+Almond and cranberry shortbread	45	5
+Apple Roasted Pork Loin	45	3
+
+Recipe_Nutritional_Value_Formalized.csv
+Name	Calcium	Carbohydrate	Cholesterol	Energy
+5 Minute Gluten Free Wonder Buns	312.8546979	21.75627604	186	284.4030625
+Almond and cranberry shortbread	45.33790012	28.71749067	65.63800043	328.0149503
+Apple Roasted Pork Loin	54.54002695	45.10662067	142.904997	697.5992833
+
+df_intake = pd.read_csv("Nutrient_Intake_Recommendations_Formalized.csv", header=None)
+df_recipe = pd.read_csv("recipe_nutritional_value.csv")
+df_recipe_cost = pd.read_csv("recipe_basic_info.csv")
+
+solve the above linear program using python and output the quantity of recipes to produce

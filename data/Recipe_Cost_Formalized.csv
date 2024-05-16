@@ -1,47 +1,47 @@
-Name,Time
-5 Minute Gluten Free Wonder Buns,45
-Almond and cranberry shortbread,45
-Apple Roasted Pork Loin,45
-Baked Oatmeal with Dried Cranberries,45
-Beef Braised In Red Wine,45
-Beef Cottage Pie,45
-"Beer Can Chicken, Country Style Vegetables with Roasted Garlic",45
-Bittersweet chocolate pudding,45
-Blackberry Pie With Lemon Verbena Whip Cream,45
-Broccolini Quinoa Pilaf,30
-Chocolate Banana Zucchini Cake,45
-Chocolate Hazelnut Mousse,45
-Classic Carrot Cake With Cream Cheese Frosting,45
-Classic Macaroni and Cheese,45
-Creamy Mushrooms Over Soba Noodles (Vegan),45
-Crispy Panko and Herb Crusted Salmon,45
-Curried Cauliflower Gratin,45
-Easy Eclairs,45
-Fenugreek Roti,45
-Fresh Herb Omelette,45
-Grilled Guacamole with Pistachios,45
-"Guf"" Danish Ice Cream Topping",45
-Hard-Boiled Egg Gratin In A Bechamel Sauce,45
-Healthy Mint Brownies,45
-Healthy Vegan Red Velvet Brownies,45
-Jalapeno Cheese Quick Bread,45
-Jalapeno Cornbread Stuffing,45
-Julia Child's Boeuf Bourguignon,180
-Knishes - Potato Filling,45
-Korean Beef Rice Bowl,45
-Mango Banana Coconut Smoothie,45
-Moosewood Lentil Soup,45
-Penne Pasta with Broccoli and Cheese,45
-Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce,45
-Slow Cooker Chicken and Dumplings,11
-Stir Fried Cabbage and Tomatoes,45
-Strawberry and Nutella Cobbler,45
-Swiss Chard Wraps,45
-Tropical Ice Pops,45
-Tzadziki,45
-"Vanilla Cream Cakes, Easy and Fluffy Holiday Cakes",45
-Vegan Peanut Butter Chocolate Fudge,45
-"Vietnamese Pancakes with Vegetables, Herbs and a Fragrant Dipping Sauce (Bánh Xèo)",45
-Wasabi Ice Cream (Wasabi Aisu),45
-White Chocolate Cheesecake With Raspberries,45
-khichdi recipe,30
+Name,Time,Preference
+5 Minute Gluten Free Wonder Buns,45,4
+Almond and cranberry shortbread,45,5
+Apple Roasted Pork Loin,45,3
+Baked Oatmeal with Dried Cranberries,45,5
+Beef Braised In Red Wine,45,5
+Beef Cottage Pie,45,2
+"Beer Can Chicken, Country Style Vegetables with Roasted Garlic",45,3
+Bittersweet chocolate pudding,45,3
+Blackberry Pie With Lemon Verbena Whip Cream,45,3
+Broccolini Quinoa Pilaf,30,5
+Chocolate Banana Zucchini Cake,45,4
+Chocolate Hazelnut Mousse,45,3
+Classic Carrot Cake With Cream Cheese Frosting,45,5
+Classic Macaroni and Cheese,45,2
+Creamy Mushrooms Over Soba Noodles (Vegan),45,4
+Crispy Panko and Herb Crusted Salmon,45,2
+Curried Cauliflower Gratin,45,4
+Easy Eclairs,45,5
+Fenugreek Roti,45,1
+Fresh Herb Omelette,45,4
+Grilled Guacamole with Pistachios,45,2
+"Guf"" Danish Ice Cream Topping",45,5
+Hard-Boiled Egg Gratin In A Bechamel Sauce,45,4
+Healthy Mint Brownies,45,1
+Healthy Vegan Red Velvet Brownies,45,1
+Jalapeno Cheese Quick Bread,45,3
+Jalapeno Cornbread Stuffing,45,3
+Julia Child's Boeuf Bourguignon,180,2
+Knishes - Potato Filling,45,4
+Korean Beef Rice Bowl,45,4
+Mango Banana Coconut Smoothie,45,3
+Moosewood Lentil Soup,45,4
+Penne Pasta with Broccoli and Cheese,45,4
+Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce,45,1
+Slow Cooker Chicken and Dumplings,11,3
+Stir Fried Cabbage and Tomatoes,45,5
+Strawberry and Nutella Cobbler,45,3
+Swiss Chard Wraps,45,5
+Tropical Ice Pops,45,1
+Tzadziki,45,2
+"Vanilla Cream Cakes, Easy and Fluffy Holiday Cakes",45,4
+Vegan Peanut Butter Chocolate Fudge,45,1
+"Vietnamese Pancakes with Vegetables, Herbs and a Fragrant Dipping Sauce (Bánh Xèo)",45,4
+Wasabi Ice Cream (Wasabi Aisu),45,2
+White Chocolate Cheesecake With Raspberries,45,2
+khichdi recipe,30,1
