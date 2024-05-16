@@ -3,9 +3,10 @@ import json
 import requests
 import pandas as pd
 
-def get_ingredients_lst(recipe):
+def get_ingredient_str_lst(recipe):
     servings = recipe['servings']
-    ingredients_lst = []
+    ingredient_str_lst = []
+    ingredient_lst = []
     
     for ingredient in recipe['extendedIngredients']:
         measures = ingredient['measures']['metric']
@@ -13,20 +14,21 @@ def get_ingredients_lst(recipe):
         unit     = measures['unitLong'].lower()
         name     = ingredient['name'].lower()
         
-        ingredient_str = f"{amount} {unit} {name},"
-        ingredients_lst.append(ingredient_str)
+        ingredient_str = f"{amount:.3f} {unit} {name},"
+        ingredient_str_lst.append(ingredient_str)
+        ingredient_lst.append(name)
     
-    return ingredients_lst
+    return ingredient_str_lst, ingredient_lst
 
 # call edamam API to get nutritional value of the recipe
-def get_nutritional_value(ingredients_lst):
+def get_nutritional_value(ingredient_str_lst):
     # API endpoint
     url = "https://api.edamam.com/api/nutrition-details"
 
     # Request body
     request = {
         "title": "Your Recipe Title",
-        "ingr": ingredients_lst,
+        "ingr": ingredient_str_lst,
         "url": '',
         "summary": "Recipe summary",
         "yield": "Recipe yield",
@@ -58,16 +60,26 @@ def main():
     
     recipe_basic_info_df = pd.DataFrame(columns=['name', 'cooking_time'])
     recipe_nutritional_value = {}
+    ingredients = set()
+    recipe_ingredient_str_lst = {}
     for recipe in data['recipes']:
         name = recipe['title']
         cooking_time = recipe['readyInMinutes']
         recipe_basic_info_df.loc[len(recipe_basic_info_df)] = [name, cooking_time]
         
-        ingredients_lst = get_ingredients_lst(recipe)
+        ingredient_str_lst, ingredient_lst = get_ingredient_str_lst(recipe)
         # print(ingredients_lst)
-        response = get_nutritional_value(ingredients_lst)
+        response = get_nutritional_value(ingredient_str_lst)
         if not response:
+            # delete recipe from the dataframe
+            recipe_basic_info_df = recipe_basic_info_df[recipe_basic_info_df['name'] != name]
             continue
+
+        
+        recipe_ingredient_str_lst[name] = ingredient_str_lst
+        ingredients.update(ingredient_lst)
+
+
         # the response also contain other information like diet/health labels and emissions...
         nutritions = response['totalNutrients']
         
@@ -76,6 +88,14 @@ def main():
         #     print(key, nutritions[key]['label'], nutritions[key]['quantity'], nutritions[key]['unit'])
         
         # break
+    
+    # save set of ingredients to a txt file
+    with open('data/ingredients.txt', 'w') as f:
+        for item in ingredients:
+            f.write("%s\n" % item)
+    # save recipe_ingredient_str_lst to a json file
+    with open('data/recipe_ingredient_str_lst.json', 'w') as f:
+        json.dump(recipe_ingredient_str_lst, f)
     
     # 2. create a list of all unique nutritional values
     nutrition_units = {}
@@ -88,6 +108,7 @@ def main():
                 assert nutrition_units[nutrition_name] == value['unit']
     
     print(nutrition_units)
+    # save nutrition_units to a json file
     
     # 3. create a dataframe whose rows are recipes and columns are nutritional values
     recipe_nutritional_value_df = pd.DataFrame(columns= list(nutrition_units.keys()))
