@@ -102,8 +102,8 @@ def main():
 
     # load recipe_cost.csv
     recipe_cost_df = pd.read_csv('data/recipe_cost.csv')
-    # merge recipe_cost_df and time_estimation_df
-    recipe_cost_time_df = pd.merge(recipe_cost_df, time_estimation_df, on='name')
+    # merge recipe_cost_df and column ['name', 'estimated_time'] from time_estimation_df
+    recipe_cost_time_df = pd.merge(recipe_cost_df, time_estimation_df[['name', 'estimated_time']], on='name')
     print(len(recipe_cost_time_df))
     # save recipe_cost_time_df to csv
     recipe_cost_time_df.to_csv('data/recipe_cost_time.csv', index=False)
