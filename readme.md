@@ -38,4 +38,7 @@ examine the units of the ingredients, and setup `weights` dicitonary and `get_in
 ##### 2.3.4 get recipe cost
 run `python recipe_cost.py` to get the recipe cost in recipe_time_cost.csv 
 
+##### 2.4 infer recipe total cook time from instructions
+Run `estimate_recipe_time.py
+
 AWAITING MODIFICATION
