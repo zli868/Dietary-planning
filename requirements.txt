@@ -1,1 +1,4 @@
 requests
+pandas
+nltk
+scikit-learn
