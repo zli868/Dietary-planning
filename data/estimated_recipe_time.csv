@@ -1,4 +1,4 @@
-name,instruction,response,completion_tokens,time_taken,estimated_time
+name,instruction,response,completion_tokens,time_taken,estimated_time_str
 Grilled Ham and Cheese French Toast For A Quick Weeknight Dinner,"Recipe Name: Grilled Ham and Cheese French Toast For A Quick Weeknight Dinner
 Preheat oven to 350 degrees.
 In a shallow bowl or pie plate, whisk together buttermilk and egg whites. Set aside.
@@ -505,9 +505,32 @@ Add decorations: 3 minutes
 
 Total Time: 18 minutes",83,21.83110547065735,18 minutes
 Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce,"Recipe Name: Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce
-Raspberry Sauce:In a saucepan, add the frozen raspberries and powdered sugar.Bring to a simmer and cook for about 3-4 minutes.Gently mash the raspberries with the back of a spatula while they cook.After 4 minutes, remove from heat and add the raspberry jam.  You could puree this mixture before serving, but I prefer it chunky.Chocolate Sauce:In a saucepan, add the chocolate chips and cream.Allow the chocolate chips to melt, stirring occasionally.","Raspberry Sauce: Prep 1 minute + Cook 4 minutes = 5 minutes
-Chocolate Sauce: Prep 1 minute + Cook 3 minutes = 4 minutes
-Total Time: 9 minutes",41,20.96672797203064,9 minutes
+Raspberry Sauce:In a saucepan, add the frozen raspberries and powdered sugar.Bring to a simmer and cook for about 3-4 minutes.Gently mash the raspberries with the back of a spatula while they cook.After 4 minutes, remove from heat and add the raspberry jam.  You could puree this mixture before serving, but I prefer it chunky.Chocolate Sauce:In a saucepan, add the chocolate chips and cream.Allow the chocolate chips to melt, stirring occasionally.","For estimating the total active time to cook the recipe Powdered Buttermilk Beignets With Raspberry and Chocolate Dipping Sauce, I will break down the steps and allocate time to each activity that requires active involvement:
+
+Raspberry Sauce:
+Add frozen raspberries and powdered sugar to a saucepan, bring to a simmer, cook, and mash - 4 minutes.
+Chocolate Sauce:
+Add chocolate chips and cream to a saucepan, melt and stir occasionally - 3 minutes.
+Dough Preparation:
+Heat 1% milk in a saucepan, remove from heat, and add buttermilk - 2 minutes.
+Pour milk into a standing mixer, whisk in yeast and sugar, let sit until foamy - 1 minute active time.
+Mix flours, baking soda, and salt in a separate bowl - 1 minute.
+Turn mixer on low speed and add flour mixture until dough forms - 3 minutes.
+Cover and let dough sit for an hour (inactive time).
+Shaping and Frying Beignets:
+Lightly flour work surface, pour out dough, fold dough, and make a ball - 5 minutes.
+Roll dough into a circle, cut into shapes - 5 minutes.
+Heat oil to 375 degrees and fry beignets, turning frequently - 5 minutes active frying time.
+Transfer beignets to a plate, shake in powdered sugar - 3 minutes.
+Serving:
+Serve warm with dipping sauces - 2 minutes.
+Total Active Time Calculation:
+Raspberry Sauce: 4 minutes
+Chocolate Sauce: 3 minutes
+Dough Preparation: 2 + 1 + 1 + 3 minutes
+Shaping and Frying Beignets: 5 + 5 + 5 + 3 minutes
+Serving: 2 minutes
+Total Active Time: 34 minutes",41,20.96672797203064,34 minutes
 Jalapeno Cheese Quick Bread,"Recipe Name: Jalapeno Cheese Quick Bread
 Heat oven to 350
 Lightly grease loaf pan, 9x5x3 or two mini muffin pans with cooking spray.
@@ -544,10 +567,42 @@ Chill completely in the refrigerator until ready to serve.","- Combine and press
 - Bake the cheesecake: 65 minutes (average of 60 to 70 minutes).
 - Cool the cheesecake at room temperature: 90 minutes.
 - Chill thoroughly in the fridge: 120 minutes.
-
 Total Time: 315 minutes.",83,21.554580688476562,315 minutes.
 Classic Carrot Cake With Cream Cheese Frosting,"Recipe Name: Classic Carrot Cake With Cream Cheese Frosting
-Preheat the oven to 32",I see the instructions got cut off. Could you please provide the complete recipe instructions?,17,20.885387182235718,I see the instructions got cut off. Could you please provide the complete recipe instructions?
+Preheat the oven to 32
+Spread the pecans on a baking sheet and toast for 8 minutes, until fragrant. Cool and finely chop.In a bowl, whisk the flour, baking powder, baking soda, cinnamon and salt.In a small bowl, whisk the oil, buttermilk and vanilla.In a large bowl, using an electric mixer, beat the eggs and sugar at high speed until pale, 5 minutes.Beat in the liquid ingredients, then beat in the dry ingredients just until moistened.Stir in the carrots and pecans.Divide the batter between the pans and bake the cakes for 55 minutes to 1 hour, until springy and golden.
+Let the cakes cool on a rack for 30 minutes, then unmold the cakes and let cool completely.For the Frosting:In a large bowl, using an electric mixer, beat the butter and cream cheese at high speed until light, about 5 minutes.Beat in the vanilla, then the confectioners' sugar; beat at low speed until incorporated. Increase the speed to high and beat until light and fluffy, about 3 minutes.Peel off the parchment paper and invert one cake layer onto a plate.
+Spread with a slightly rounded cup of the frosting. Top with the second cake layer, right side up.
+Spread the top and sides with the remaining frosting and refrigerate the cake until chilled, about 1 hour.","For estimating the total active time to cook the recipe Classic Carrot Cake With Cream Cheese Frosting, I will break down the steps and allocate time to each activity that requires active involvement:
+Preparation:
+Preheat the oven - 1 minute.
+Spread pecans on a baking sheet and toast for 8 minutes (active time to spread and later chop) - 3 minutes.
+Cool and finely chop pecans - 2 minutes.
+Whisk flour, baking powder, baking soda, cinnamon, and salt in a bowl - 2 minutes.
+Whisk oil, buttermilk, and vanilla in a small bowl - 1 minute.
+Beat eggs and sugar at high speed until pale - 5 minutes.
+Beat in liquid ingredients - 1 minute.
+Beat in dry ingredients just until moistened - 2 minutes.
+Stir in carrots and pecans - 2 minutes.
+Divide the batter between the pans - 2 minutes.
+Baking:
+Bake the cakes (inactive time) - 0 minutes active.
+Cooling:
+Let the cakes cool on a rack for 30 minutes, then unmold and let cool completely (inactive time) - 0 minutes active.
+Frosting:
+Beat butter and cream cheese at high speed until light - 5 minutes.
+Beat in vanilla and confectioners' sugar at low speed until incorporated, then at high speed until light and fluffy - 4 minutes.
+Assembly:
+Peel off the parchment paper and invert one cake layer onto a plate - 1 minute.
+Spread with a slightly rounded cup of frosting - 2 minutes.
+Top with the second cake layer, right side up, and spread the top and sides with the remaining frosting - 3 minutes.
+Refrigeration:
+Refrigerate the cake until chilled (inactive time) - 0 minutes active.
+Total Active Time Calculation:
+Preparation: 1 + 3 + 2 + 2 + 1 + 5 + 1 + 2 + 2 + 2 minutes
+Frosting: 5 + 4 minutes
+Assembly: 1 + 2 + 3 minutes
+Total Time: 36 minutes",17,20.885387182235718,36 minutes
 Knishes - Potato Filling,"Recipe Name: Knishes - Potato Filling
 Brown the onions in the fat or butter. Beat in the potatoes, egg, salt and pepper until fluffy.
 Place on dough.","Browning the onions usually takes around 10 minutes. Beating the potatoes with egg, salt, and pepper until fluffy might take about 5 minutes.
@@ -555,19 +610,34 @@ Place on dough.","Browning the onions usually takes around 10 minutes. Beating t
 Total Time: 15 minutes",37,21.226966619491577,15 minutes
 Gluten Free Fruit Stuffed Turkey Breast with Hibiscus Sauce,"Recipe Name: Gluten Free Fruit Stuffed Turkey Breast with Hibiscus Sauce
 For the Turkey:Method: Preheat oven to 350 degrees.  Slit a pocket laterally in the turkey breast. Julienne the dried fruit and the spinach and mix in a bowl with the chopped shallot. Stuff the mixture into the turkey breast and season with salt and pepper, coat with the melted butter and wrap in sheet of foil.
-Heat a large skillet until it is very hot and place the turkey in the pan and allow to cook for about two minutes on each side or until it is golden brown on all sides (you will have to peek inside the foil to check).
+Heat a large skillet until it is very hot and place the turkey in the pan and allow to cook for about two minutes on each side or until it is golden brown on all sides (you will have to peek inside the foil to check).        
 Place the pan in the oven and cook for 15 minutes then flip the breasts and cook for an additional 20 to 30 minutes or until a probe thermometer inserted into the middle of the breast reads 165 degrees.
 Remove the pan from the oven and place the pan on a cutting board and allow to rest for five minutes.
 Remove the turkey from the foil then carve into 1  inch thick medallions
-For the sauce:Method: In a non-reactive saucepan bring the vinegar and the sugar to a boil. Cook the mixture till the sugar begins to caramelize (Brown).","Preheat oven: 10 minutes  
-Prep turkey breast: 15 minutes  
-Cook turkey in skillet: 5 minutes  
-Bake turkey in oven: 45 minutes (average of 20-30 minutes)  
-Rest turkey: 5 minutes  
-Carve turkey: 5 minutes  
-Prepare sauce: 10 minutes  
+For the sauce:Method: In a non-reactive saucepan bring the vinegar and the sugar to a boil. Cook the mixture till the sugar begins to caramelize (Brown).
+Place a 1 oz. pool of the sauce on a plate and fan the carved turkey over the sauce.","For estimating the total active time to cook the recipe Gluten Free Fruit Stuffed Turkey Breast with Hibiscus Sauce, I will break down the steps and allocate time to each activity that requires active involvement:
 
-Total Time: 95 minutes",71,21.596286296844482,95 minutes
+Turkey Preparation:
+Preheat the oven to 350 degrees - 1 minute.
+Slit a pocket in the turkey breast - 2 minutes.
+Julienne the dried fruit and spinach, mix with chopped shallot - 5 minutes.
+Stuff the mixture into the turkey breast, season, coat with melted butter, and wrap in foil - 5 minutes.
+Heat a skillet, place the turkey in the pan, and cook for about two minutes on each side - 6 minutes.
+Baking:
+Bake the turkey (inactive time) - 0 minutes active.
+Remove from the oven and rest for five minutes (inactive time) - 0 minutes active.
+Carving:
+Remove the turkey from the foil and carve into 1-inch thick medallions - 3 minutes.
+Sauce Preparation:
+Bring vinegar and sugar to a boil in a non-reactive saucepan, cook until the sugar caramelizes - 5 minutes.
+Plating:
+Place a 1 oz. pool of sauce on a plate and fan the carved turkey over the sauce - 2 minutes.
+Total Active Time Calculation:
+Turkey Preparation: 1 + 2 + 5 + 5 + 6 minutes
+Carving: 3 minutes
+Sauce Preparation: 5 minutes
+Plating: 2 minutes
+Total Time: 29 minutes",71,21.596286296844482,29 minutes
 Fenugreek Roti,"Recipe Name: Fenugreek Roti
 Soak the dried fenugreek leaves in warm water for 5 to 10 minutes.
 Drain, making sure to squeeze out excess liquid.Sift the flours and baking soda in a small strainer into a medium bowl. Stir in the salt, chili powder, cayenne, cumin, coriander, ajwain seeds, asafetida, yogurt and fenugreek leaves.

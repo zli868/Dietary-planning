@@ -162,5 +162,8 @@ recipe_cost_df = pd.read_csv('data/Recipe_Cost_Formalized.csv')
 recipe_cost_df['Cost'] = recipe_cost_df['Name'].apply(lambda x: recipe_costs.get(x, None))
 # check if there is na in the cost column
 print(recipe_cost_df[recipe_cost_df['Cost'].isna()])
+
+# Turn all columns to lowercase
+recipe_cost_df.columns = recipe_cost_df.columns.str.lower()
 # save the dataframe to csv
-recipe_cost_df.to_csv('data/recipe_time_cost.csv', index=False)
+recipe_cost_df.to_csv('data/recipe_cost.csv', index=False)
