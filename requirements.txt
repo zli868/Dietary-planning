@@ -1,4 +1,7 @@
+openai
 requests
 pandas
 nltk
 scikit-learn
+gekko==1.1.1
+PuLP==2.8.0
