@@ -41,5 +41,5 @@ run `python recipe_cost.py` to get the recipe cost in recipe_time_cost.csv
 ##### 2.4 infer recipe total cook time from instructions
 Run `estimate_recipe_time.py
 
-Implementation
+Implementation of Optimization Algorithm
 the linear_prog_solver.ipynb and Non-linear-Solver-Gekko.ipynb is located in data folder. Open them in a jupyter notebook and run the solver in each cell to get the output of the dishes to produce.
