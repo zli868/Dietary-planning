@@ -50,4 +50,4 @@ run 'data/linear_prog_solver.ipynb'
 run 'data/Non-linear-Solver-Gekko.ipynb'
 
 
-the linear_prog_solver.ipynb and Non-linear-Solver-Gekko.ipynb is located in data folder. Open them in a jupyter notebook and run the solver in each cell to get the output of the dishes to produce.
+Note:the linear_prog_solver.ipynb and Non-linear-Solver-Gekko.ipynb is located in data folder. Open them in a jupyter notebook and run the solver in each cell to get the output of the dishes to produce.
